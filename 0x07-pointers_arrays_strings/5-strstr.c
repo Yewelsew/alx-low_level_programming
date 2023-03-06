@@ -1,5 +1,4 @@
 #include "man.h"
-
 /**
 * _strstr - locates a substring.
 * @haystack: char array
@@ -9,16 +8,20 @@
 */
 char *_strstr(char *haystack, char *needle)
 {
-	while (*haystack)
+	while (*haystack != '\0')
 	{
-		if ((*haystack == *needle && coincidence(haystack, needle) == 1) || !*needle)
+		char *duplicate = haystack;
+
+		while (*haystack == *needle && *haystack != '\0' && *needle != '\0')
 		{
-			return (haystack);
-		}
-		else
-		{
+			needle++;
 			haystack++;
 		}
+		if (!*needle != '\0')
+		{
+			return (duplicate);
+		}
+		haystack++;
 	}
 	return (0);
 }
