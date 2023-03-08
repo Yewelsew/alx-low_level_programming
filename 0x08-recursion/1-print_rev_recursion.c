@@ -2,7 +2,8 @@
 
 /**
  * main - check the code
- *
+ * @s: string
+ * _print_rev_recursion - Prints a string in reverse
  *
  * Return: Always return nithing.
  */
