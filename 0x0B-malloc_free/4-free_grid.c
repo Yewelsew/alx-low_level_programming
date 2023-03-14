@@ -1,8 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 
-#include "holberton.h"
-
 /**
   * free_grid - ...
   * @grid: ...
