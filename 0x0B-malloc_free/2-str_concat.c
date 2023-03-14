@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
-  * str_concat - Concatenates
+  * str_concat - Concatenates two strings of any size
   * @s1: the first string to concatenate
   * @s2: the second string to concatenate
   *
@@ -27,7 +27,7 @@ char *str_concat(char *s1, char *s2)
 		j++;
 
 	y = i + j;
-	s = malloc((sizeof(char) * y) + y);
+	s = malloc((sizeof(char) * y) + 1);
 
 	if (s == NULL)
 		return (NULL);
@@ -37,7 +37,7 @@ char *str_concat(char *s1, char *s2)
 	while (x < l)
 	{
 		if (x <= i)
-			s[k] = s1[k];
+			s[x] = s1[x];
 
 		if (x >= i)
 		{
