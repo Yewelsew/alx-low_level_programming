@@ -1,12 +1,13 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
- * _strdup -Write a function that returns a pointer to a newly allocated space in memor
- * @str: a pointer to the string to copy
- *
- * Return: NULL if str is NULL or if memory allocation fails,
- * otherwise a return a pointer to the new copy
- */
+  * _strdup - Duplicate a string
+  * @str: the string to duplicate
+  *
+  * Return: the string duplicated
+  */
+
 char *_strdup(char *str)
 {
 	char *dup;
