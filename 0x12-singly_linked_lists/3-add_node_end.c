@@ -1,7 +1,13 @@
 #include "lists.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <stddef.h>
 
 /**
   * add_node_end - adds node to end of a list
+  * _strlen - gets length of the string
+  * @s: string
+  * Return: length of the string
   *
   * @head: pointer to pointer to head of list
   * @str: string to copy to node
