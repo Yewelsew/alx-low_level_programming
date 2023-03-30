@@ -1,10 +1,3 @@
-/**
- * add_node_end - adds a node at the end of list
- * @head: points to the head of list
- * @str: what goes in the new node
- * Return: address of new node or NULL
- */
-
 #include "lists.h"
 #include <stdlib.h>
 #include <stdio.h>
